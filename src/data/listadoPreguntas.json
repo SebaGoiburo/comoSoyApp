@@ -1,0 +1,436 @@
+[
+    {
+      "id": 1,
+      "aseveracion": "Te enorgullecés de tu objetividad, a pesar de que algunos te acusan de ser frío e indiferente.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 2,
+      "aseveracion": "Necesitás recargar energías solo, después de reuniones, llamadas telefónicas o socialización; cuanto más intenso es el encuentro, más agotado te sentís después.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 3,
+      "aseveracion": "Creés que el amor no puede ser definido; te sentís ofendido por los que tratan de hacerlo.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 4,
+      "aseveracion": "No te importa tomar decisiones difíciles y no comprendés por qué algunas personas se alteran por cosas que no son relevantes para el asunto que se está tratando.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 5,
+      "aseveracion": "Tendés a hablar primero y después pensar; con frecuencia te decís a vos mismo: “¿Cuándo voy a aprender a mantener mi boca cerrada?”",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 6,
+      "aseveracion": "Recordás los números y cifras más fácilmente que las caras y los nombres.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 7,
+      "aseveracion": "Conocés a mucha gente y a muchos de ellos los considerás como amigos íntimos; te gusta incluir tanta gente como sea posible en tus actividades.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 8,
+      "aseveracion": "Considerás como una buena decisión la que toma en cuenta los sentimientos de otros.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 9,
+      "aseveracion": "Ensayás las cosas antes de decirlas; a menudo contestás con 'lo tendré que pensar o te contesto más tarde'.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 10,
+      "aseveracion": "No te importa leer o tener una conversación mientras se desarrolla otra actividad (como una conversación, la TV, Radio, etc.); en realidad podés permanecer indiferente a esta distracción.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 11,
+      "aseveracion": "No dudás en retirar lo dicho si percibís que has ofendido a alguien; como consecuencia sos acusado de no tener convicciones.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 12,
+      "aseveracion": "No te gusta que te obliguen a tomar decisiones; preferís mantener tus opciones abiertas.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 13,
+      "aseveracion": "Sos accesible y trabás conversación fácilmente con amigos, compañeros del trabajo y extraños teniendo quizás un papel dominante en la conversación.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 14,
+      "aseveracion": "Preferís la armonía a la claridad; el conflicto te abruma y tratás de evitarlo.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 15,
+      "aseveracion": "Te sentís frustrado cuando las personas te dan instrucciones poco claras o cuando alguien te dice 'este es el plan general, nos ocuparemos de los detalles después'.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 16,
+      "aseveracion": "En una conversación cambiás a menudo de tema; el nuevo tema puede ser algo que te viene a la mente o que atrae tu atención en ese momento.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 17,
+      "aseveracion": "Tendés a que las cosas no sean definitivas, aunque no siempre.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 18,
+      "aseveracion": "Considerás más importante tener razón que caer bien; no creés necesario que la gente deba caerte bien para poder trabajar con ella y realizar un buen trabajo.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 19,
+      "aseveracion": "No te gustan las sorpresas y esto se lo haces saber a los demás.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 20,
+      "aseveracion": "Tendés a dar más crédito a cosas que son lógicas y científicas; por ejemplo, hasta que no recibás más información que justifique los beneficios de este test, te mantendrás escéptico acerca de su utilidad.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 21,
+      "aseveracion": "Hacés listas y las utilizás; si hacés algo que no está en tu lista puede que lo agregues a la misma solo para poder tacharlo.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 22,
+      "aseveracion": "Convertís todo trabajo en una diversión; si un trabajo no puede ser algo entretenido probablemente no sea digno de hacerse.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 23,
+      "aseveracion": "Encontrás que escuchar es más difícil que hablar; te gusta ser la estrella de la conversación, y te aburrís cuando no podés participar activamente en ella.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 24,
+      "aseveracion": "Te deleita el orden; tenés tu manera especial para guardar las cosas en tu escritorio, en tus archivos o para colgar cosas en las paredes.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 25,
+      "aseveracion": "Preferís generar ideas en un grupo que por tu cuenta; te sentís agotado si pasás mucho tiempo reflexionando sin tener la oportunidad de intercambiar tus ideas con otros.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 26,
+      "aseveracion": "Suelen acusarte de estar enojado cuando no lo estás; es solo tu manera de expresar tu opinión.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 27,
+      "aseveracion": "Disfrutás prestando servicios necesarios a la gente aunque algunos se aprovechen de vos.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 28,
+      "aseveracion": "Te distraés fácilmente; te 'perdés' en el camino de la puerta de la calle al auto.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 29,
+      "aseveracion": "Te gusta completar un trabajo hasta acabarlo y sacártelo de encima aun cuando sabés que deberás rehacerlo de nuevo más tarde para hacerlo bien.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 30,
+      "aseveracion": "Adorás explorar lo desconocido, aun cuando sea algo tan simple como el camino del trabajo a casa.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 31,
+      "aseveracion": "Te extralimitás tratando de satisfacer las necesidades de otros; harás casi cualquier cosa para acomodar a otros incluso a expensas de tu propio confort.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 32,
+      "aseveracion": "No planificás una tarea hasta ver qué es lo que se requiere; la gente te acusa de ser desorganizado aunque vos sabés mejor qué es lo que hay que hacer.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 33,
+      "aseveracion": "Te ponés en el lugar de los demás; vos sos quien en una reunión probablemente pregunta cómo afectará esto a la gente involucrada.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 34,
+      "aseveracion": "Tenés un lugar para cada cosa y no te sentís satisfecho hasta que cada cosa esté en su sitio.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 35,
+      "aseveracion": "A menudo te preguntás si alguien se preocupa por lo que vos deseás aunque tengas dificultad en decírselo a alguien.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 36,
+      "aseveracion": "Te gusta hablar sobre tus proyectos e ideas; generalmente no se los mostrás a la gente hasta que no estén completos.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 37,
+      "aseveracion": "Pensás en varias cosas al mismo tiempo; a menudo tus amigos y colegas te señalan que estás 'como ausente'.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 38,
+      "aseveracion": "Dependés de tus descargas de adrenalina en el último minuto para cumplir con tus fechas límite; habitualmente cumplís con la fecha límite aunque volvés loco a todo el mundo para lograrlo.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 39,
+      "aseveracion": "Pensás en varias cosas al mismo tiempo; a menudo tus amigos y colegas te señalan que estás 'como ausente'.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 40,
+      "aseveracion": "Recordás con más facilidad el rostro y las circunstancias en que conociste a alguien que su nombre.",
+      "categoria": "F",
+      "respuesta": 0
+    },
+    {
+      "id": 41,
+      "aseveracion": "Encontrás el futuro y sus posibilidades interesantes, más que atemorizantes; generalmente te atrae más a donde vas que donde estás.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 42,
+      "aseveracion": "Sabés que si cada uno hiciera lo que se supone debe hacer (y en el momento que se supone debe hacerlo) el mundo sería un lugar mejor.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 43,
+      "aseveracion": "Sos de la idea que hay que ver para creer; si alguien te dice que llegó el correo, no lo creés hasta que no está sobre tu escritorio.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 44,
+      "aseveracion": "Creés que el tiempo es relativo; no importa la hora a menos que la reunión, cena o evento haya comenzado sin vos.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 45,
+      "aseveracion": "Usás las palabras en forma literal; a menudo te ves en la necesidad de preguntar si lo que dicen es en serio o es un chiste.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 46,
+      "aseveracion": "Te despertás por la mañana y sabés bastante bien cómo será tu día; tenés una agenda y la seguís; podés alterarte si las cosas no marchan como estaba planeado.",
+      "categoria": "J",
+      "respuesta": 0
+    },
+    {
+      "id": 47,
+      "aseveracion": "Te interesa saber cómo funcionan las cosas solo por placer.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 48,
+      "aseveracion": "Te gusta demostrar tu punto de vista por motivos de claridad; es habitual en vos discutir ambos puntos de vista en un debate simplemente para ampliar tu horizonte intelectual.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 49,
+      "aseveracion": "Te gusta expresar tus pensamientos o ideas sin interrupciones; dejás que otros hagan lo mismo, esperando que sea recíproco.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 50,
+      "aseveracion": "Sos capaz de mantenerte frío, calmado y objetivo en situaciones donde todo el mundo está alterado.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 51,
+      "aseveracion": "Encontrás más fácil ver los árboles que el bosque; sos feliz de concentrarte en tu trabajo y no te preocupás acerca de cómo encaja éste en un esquema más amplio.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 52,
+      "aseveracion": "Tenés inclinación a las chanzas y los juegos de palabras.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 53,
+      "aseveracion": "Encontrás más satisfactorios aquellos trabajos que producen resultados tangibles; preferirías limpiar tu escritorio que pensar en lo que te depara el futuro de tu carrera.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 54,
+      "aseveracion": "Desearías imponer tus ideas con más fuerza. Te molesta que otros digan antes cosas que vos estabas por decir.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 55,
+      "aseveracion": "Preferirías resolver una disputa basándote en lo que es justo y verdadero más que en lo que hace feliz a la gente.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 56,
+      "aseveracion": "Preferís respuestas específicas a preguntas específicas; cuando preguntás la hora, preferís que te digan 3:42, y no que falta un poco para las 4 o que es hora de salir.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 57,
+      "aseveracion": "Preferís fantasear sobre cómo gastar tu próximo sueldo que sentarte a balancear tu cuenta bancaria.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 58,
+      "aseveracion": "Sos una persona de ideas firmes que de corazón tierno; si estás en desacuerdo con las personas preferís decirlo que callar y que crean que estás de acuerdo.",
+      "categoria": "T",
+      "respuesta": 0
+    },
+    {
+      "id": 59,
+      "aseveracion": "Te gusta concentrarte en lo que estás haciendo en ese momento y generalmente no te preocupa lo que sigue; es más, preferís hacer algo que pensar en ello.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 60,
+      "aseveracion": "No creés que la prolijidad sea importante, aunque preferirías tener las cosas en orden; lo importante es la creatividad, la espontaneidad y la capacidad de respuesta.",
+      "categoria": "P",
+      "respuesta": 0
+    },
+    {
+      "id": 61,
+      "aseveracion": "Necesitás aprobación de los colegas superiores y subordinados acerca de quién sos, de lo que hacés, cómo lucís y casi sobre todo lo demás; podés pensar que hacés un buen trabajo pero hasta que no escuchás a alguien decírtelo, no lo creerás realmente.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 62,
+      "aseveracion": "Encontrás más atractivo buscar las relaciones y conexiones subyacentes a las cosas, más que aceptarlas tal como aparecen; siempre estás preguntando qué es lo que eso significa.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 63,
+      "aseveracion": "Es posible que creás que los que hablan mucho, sean charlatanes; cuando escuchás otros conversando puede venirte a la mente que están perdiendo el tiempo.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 64,
+      "aseveracion": "Tendés a dar respuestas generales a las preguntas; no comprendés por qué tanta gente no puede seguir tus instrucciones y te irritás cuando la gente te presiona en busca de especificaciones.",
+      "categoria": "N",
+      "respuesta": 0
+    },
+    {
+      "id": 65,
+      "aseveracion": "Sos percibido como un gran escucha pero sentís que otros toman ventaja de ello y se aprovechan.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 66,
+      "aseveracion": "Pensás que la fantasía es una mala palabra; dudás de la gente que parece dedicar demasiado tiempo a jugar con su imaginación.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 67,
+      "aseveracion": "No te importa si alguien se ofende cuando decís algo que es honesto y verdadero.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 68,
+      "aseveracion": "Hacés planes para tus fines de semana; si no tenés planes, es probable que no hagas nada excepto lo que te dé la gana.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 69,
+      "aseveracion": "Creés que las oportunidades de trabajo son más importantes que la cantidad de dinero que podés ganar.",
+      "categoria": "I",
+      "respuesta": 0
+    },
+    {
+      "id": 70,
+      "aseveracion": "Cuando hablás con alguien por teléfono, mirás alrededor para ver lo que hay o lo que se está haciendo.",
+      "categoria": "S",
+      "respuesta": 0
+    },
+    {
+      "id": 71,
+      "aseveracion": "Sos un crítico duro; la gente puede depender de vos para decirles la verdad aunque no les guste.",
+      "categoria": "E",
+      "respuesta": 0
+    },
+    {
+      "id": 72,
+      "aseveracion": "Tenés un plan o sistema para casi todo; inclusive los amigos y familiares se sienten obligados a usarlo.",
+      "categoria": "I",
+      "respuesta": 0
+    }
+  ]
+  
+  

@@ -7,18 +7,9 @@ const { height: windowHeight } = Dimensions.get('window');
 export default function Header() {
   return (
     <View style={styles.container}>
-      <View style={styles.containerFotoPerfil}>
-        <Image
-        style={styles.fotoPerfil}
-        source={require('../../assets/images/userDefault.png')}
-        />
-      </View>
       <Image style={styles.logoTitulo}
         source={require('../../assets/images/logo/logoTitulo.png')}
         />
-      <Image style={styles.iconoEnviar}
-      source={require('../../assets/images/icons/iconoEnviar.png')}
-      />
     </View>
   )
 }
@@ -32,16 +23,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
-  containerFotoPerfil: {
-    height: 50,
-    width: 50,
-    borderRadius: 25,
-  },
-  fotoPerfil: {
-    height: 50,
-    width: 50,
-    borderRadius: 25,
-  },
   logoTitulo: {
     height: 150,
     width: 150,
@@ -49,9 +30,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 2
-  },
-  iconoEnviar: {
-    height: 50,
-    width: 50,
   }
 })

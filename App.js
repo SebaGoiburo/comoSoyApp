@@ -2,14 +2,17 @@ import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
 
 import * as SplashScreen from 'expo-splash-screen';
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
-import Home from './src/screens/Home.jsx'
-import Login from './src/screens/Login.jsx'
-import Test from './src/screens/Test.jsx'
+
 import { colores } from './src/global/colors';
+
+import Navigator from './src/navigation/Navigator';
+
+import { Provider } from 'react-redux';
+import Store from './src/store'; 
+
 
 SplashScreen.preventAutoHideAsync();
 
@@ -34,26 +37,9 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavigationContainer>
-        <Stack.Navigator 
-          initialRouteName="Login"
-          screenOptions={
-            {
-              headerStyle: {
-                backgroundColor: colores.celeste,
-              },
-              headerTitleStyle:{
-                fontSize: 14,
-                fontWeight: 'regular',
-                color: '#ffffff',
-              }
-            }
-          }>
-          <Stack.Screen name="Home" component={Home}/>
-          <Stack.Screen name="Login" component={Login}/>
-          <Stack.Screen name="Test" component={Test}/>
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Provider store={Store}>
+        <Navigator />
+      </Provider>
     </SafeAreaView>
   );
 }
