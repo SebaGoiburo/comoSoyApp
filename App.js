@@ -1,38 +1,29 @@
-import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
-
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
-import * as SplashScreen from 'expo-splash-screen';
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
-
 import { colores } from './src/global/colors';
-
 import Navigator from './src/navigation/Navigator';
-
 import { Provider } from 'react-redux';
 import Store from './src/store'; 
-
-
-SplashScreen.preventAutoHideAsync();
+import { initSQLiteDB } from './src/persistence';
 
 const Stack = createNativeStackNavigator();
 
+(async ()=> {
+  try {
+    const response = await initSQLiteDB()
+    console.log({responseCreatingDb: response})
+    console.log("Db inicializada")
+  } catch (error) {
+    console.log({errorCreatingDB: error})
+  }
+})()
+
 export default function App() {
-  
+
   const [loaded, error] = useFonts({
     'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
   });
-
-  useEffect(() => {
-    if (loaded || error) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded, error]);
-
-  if (!loaded && !error) {
-    return null;
-  }
 
 
   return (

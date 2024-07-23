@@ -10,6 +10,7 @@ import Perfil from '../screens/Perfil';
 import HomeStackNavigator from './HomeStackNavigator';
 import Compatibilidad from '../screens/Compatibilidad';
 import Header from '../components/Header'
+import MyProfileStackNavigator from './MyProfileStackNavigation';
 
 const { height: windowHeight } = Dimensions.get('window');
 
@@ -38,8 +39,8 @@ const BotonTabNavigator = () => {
                     }
                 }} />
         <Tab.Screen 
-            name="Perfil" 
-            component={Perfil} 
+            name="Ir al perfil" 
+            component={MyProfileStackNavigator} 
             options={{
                 tabBarIcon: ({focused}) =>{
                     return(

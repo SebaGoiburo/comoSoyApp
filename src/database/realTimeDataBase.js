@@ -1,0 +1,1 @@
+export const baseUrl = "https://comosoy-9d150-default-rtdb.firebaseio.com/";
