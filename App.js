@@ -1,5 +1,6 @@
+import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
 import { colores } from './src/global/colors';
 import Navigator from './src/navigation/Navigator';
@@ -9,29 +10,36 @@ import { initSQLiteDB } from './src/persistence';
 
 const Stack = createNativeStackNavigator();
 
-(async ()=> {
+const initializeDatabase = async () => {
   try {
-    const response = await initSQLiteDB()
-    console.log({responseCreatingDb: response})
-    console.log("Db inicializada")
+    const response = await initSQLiteDB();
+    console.log({ responseCreatingDb: response });
+    console.log("Db inicializada");
   } catch (error) {
-    console.log({errorCreatingDB: error})
+    console.log({ errorCreatingDB: error });
   }
-})()
+};
 
 export default function App() {
+
+  useEffect(() => {
+    initializeDatabase();
+  }, []);
 
   const [loaded, error] = useFonts({
     'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
   });
 
+  if (!loaded) {
+    return null; // or a loading spinner
+  }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Provider store={Store}>
+    <Provider store={Store}>
+      <SafeAreaView style={styles.container}>
         <Navigator />
-      </Provider>
-    </SafeAreaView>
+      </SafeAreaView>
+    </Provider>
   );
 }
 

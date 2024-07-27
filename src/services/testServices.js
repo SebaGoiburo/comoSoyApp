@@ -2,40 +2,41 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { baseUrl } from "../database/realTimeDataBase";
 
 export const testApi = createApi({
-    baseQuery: fetchBaseQuery({baseUrl: baseUrl }),
-    tagTypes: ['profileImageGet'],
-    endpoints: (builder)=> ({
-        getTest: builder.query({
-            query: ()=> `test.json`
-        }),
-        getPreguntasByCategory: builder.query({
-            query: (category)=> `test.json?orderBy="categoria"&equalTo="${category}"`
-        }),
-        getPreguntasById: builder.query({
-            query: (id)=> `test.json?orderBy="id"&equalTo=${id}`
-        }),
-        postTest: builder.mutation({
-            query: (...test)=>({
-                url: 'test.json',
-                method: "POST",
-                body: test,
-            })
-        }),
+    baseQuery: fetchBaseQuery({ baseUrl: baseUrl }),
+    tagTypes: ['profileImageGet', 'personalityTest'],
+    endpoints: (builder) => ({
         getProfileimage: builder.query({
-            query: (localId )=> `profileImages/${localId}.json`, 
+            query: (localId) => `profileImages/${localId}.json`,
             providesTags: ["profileImageGet"]
         }),
         postProfileImage: builder.mutation({
-            query: ({image, localId}) => ({
-              url: `profileImages/${localId}.json`,
-              method: "PUT",
-              body: {
-                image: image
-              },
+            query: ({ image, localId }) => ({
+                url: `profileImages/${localId}.json`,
+                method: "PUT",
+                body: {
+                    image: image
+                },
             }),
             invalidatesTags: ['profileImageGet'],
-        })
+        }),
+        getPersonalityTest: builder.query({
+            query: (localId) => `personalityTests/${localId}.json`,
+            providesTags: ["personalityTest"]
+        }),
+        postPersonalityTest: builder.mutation({
+            query: ({ test, localId, resultado }) => ({
+                url: `personalityTests/${localId}.json`,
+                method: "PUT", 
+                body: { test, resultado },
+            }),
+            invalidatesTags: ['personalityTest'],
+        }),
     }),
 });
 
-export const {useGetTestQuery, useGetPreguntasByCategoryQuery, useGetPreguntasByIdQuery, usePostTestMutation, useGetProfileimageQuery, usePostProfileImageMutation} = testApi;
+export const {
+    useGetProfileimageQuery,
+    usePostProfileImageMutation,
+    usePostPersonalityTestMutation,
+    useGetPersonalityTestQuery
+} = testApi;

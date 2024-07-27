@@ -1,6 +1,6 @@
 import {  StyleSheet, View, Image, Text, Dimensions, Pressable } from 'react-native';
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { colores } from '../global/colors';
 import { AntDesign } from '@expo/vector-icons';
 import Pregunta from '../components/Pregunta';
@@ -15,16 +15,14 @@ const Test = ({navigation, route}) => {
 
   const dispatch = useDispatch();
 
-  const [triggerPostTest, result] = usePostTestMutation();
-
-  const onPersistirTest = () => {
-    triggerPostTest({})
-  }
+  const idPregunta = useSelector((state)=> state.test.value.idPregunta);
 
   const handlePrevious = () => {
     dispatch(anteriorIdPregunta());
   };
   
+
+
   return (
     <View style={styles.containerTest}>
       <Text style={styles.tituloTest}>Test de Personalidad</Text>
@@ -36,6 +34,7 @@ const Test = ({navigation, route}) => {
           source={require('../../assets/images/test.png')}
           />
       </View>
+      <Text style={styles.restoPreguntas}> Te quedan {72-idPregunta} preguntas</Text>
     </ View>  
   )
 }
@@ -45,32 +44,39 @@ export default Test
 const styles = StyleSheet.create({
   containerTest: {
     padding: 'auto',
-    gap: 15,
+    gap: 10,
     height: '100%',
     backgroundColor: colores.amarillito,
   },
   tituloTest: {
     margin: 'auto',
     padding: 10,
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     fontFamily: 'OpenSans-Regular',
     color: colores.gris,
     backgroundColor: '#ffffff',
     borderRadius: 25,
-    marginTop: 90,
+    marginTop: 60,
   },
   containerFooterTest: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    alignContent: 'flex-start',
+    height: windowHeight * 0.2,
+    width: 'auto'
   },
   botonAtras:{
-    marginLeft:20,
+    marginLeft: 20,
   },
   fotoTest: {
-    height: windowHeight * 0.2,
-    //width: 'auto',
+    height: windowHeight * 0.18,
     resizeMode: 'contain',
+    marginRight: 10
+  },
+  restoPreguntas: {
+    fontSize: 12,
+    alignSelf: 'center'
   }
 })

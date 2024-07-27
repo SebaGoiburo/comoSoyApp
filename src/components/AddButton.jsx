@@ -21,7 +21,7 @@ export default AddButton;
 
 const styles = StyleSheet.create({
     button: {
-        width: "80%",
+        width: "60%",
         backgroundColor: colores.salmon,
         borderRadius: 15,
         justifyContent: "center",

@@ -15,6 +15,7 @@ const Perfil = ({navigation}) => {
   const dispatch = useDispatch();
   const {imageCamera, localId, user} = useSelector((state) => state.auth.value)
   const {data: imageFromBase} = useGetProfileimageQuery(localId)
+  const hayResultado = useSelector((state)=> state.test.value.resultadoTest);
 
   const launchCamera = async () => {
     navigation.navigate("Image Selector");
@@ -57,10 +58,7 @@ const Perfil = ({navigation}) => {
         Correo Electrónico: {user}
       </Text>
       <Text style={styles.datosPersonales} >
-        Contraseña: Urquiza70$
-      </Text>
-      <Text style={styles.datosPersonales} >
-        Personalidad: IFNV
+        Personalidad: {hayResultado ? hayResultado : "Aún no has realizado el test"}
       </Text>
       <AddButton onPress={signOut} title="Cerrar Cesión" />
     </View>
@@ -72,7 +70,7 @@ export default Perfil
 const styles = StyleSheet.create({
   containerPerfil: {
     padding: 'auto',
-    gap: 15,
+    gap: 25,
     height: '100%',
     backgroundColor: colores.amarillito,
   },
@@ -85,9 +83,13 @@ const styles = StyleSheet.create({
     marginTop: 90,
   },
   fotoPerfil: {
-    height: windowHeight * 0.25,
-    width: 'auto',
+    height: 150,
+    width: 150,
     resizeMode: 'contain',
+    borderRadius: 75,
+    borderColor: colores.salmon,
+    borderWidth: 2,
+    alignSelf: 'center'
   },
   datosPersonales: {
     fontFamily: 'OpenSans-Regular',
