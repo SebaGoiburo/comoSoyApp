@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native';
-import { colores } from './src/global/colors';
-import Navigator from './src/navigation/Navigator';
 import { Provider } from 'react-redux';
-import Store from './src/store'; 
+import Store from './src/store';
+import Navigator from './src/navigation/Navigator';
 import { initSQLiteDB } from './src/persistence';
-
-const Stack = createNativeStackNavigator();
+import { colores } from './src/global/colors';
 
 const initializeDatabase = async () => {
   try {
@@ -21,17 +18,16 @@ const initializeDatabase = async () => {
 };
 
 export default function App() {
-
   useEffect(() => {
     initializeDatabase();
   }, []);
 
-  const [loaded, error] = useFonts({
+  const [loaded] = useFonts({
     'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
   });
 
   if (!loaded) {
-    return null; // or a loading spinner
+    return null;
   }
 
   return (

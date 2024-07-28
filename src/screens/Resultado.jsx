@@ -11,19 +11,21 @@ const Resultado = () => {
 
   return (
     <View style={styles.containerResultado}>
-      <Text style={styles.tituloResultado}>{resultadoTest}</Text>
-      {descripcionPersonalidad ? (
-        <>
-          <Text style={styles.descripcionResultado}>{descripcionPersonalidad.descripción}</Text>
-          {Object.entries(descripcionPersonalidad.características).map(([key, value]) => (
-            <Text key={key} style={styles.caracteristicasResultado}>
-              {key}: {value}
-            </Text>
-          ))}
-        </>
-      ) : (
-        <Text style={styles.errorText}>No se encontró una descripción para el resultado obtenido.</Text>
-      )}
+      <Text style={styles.tituloResultado}>Tipo de personalidad: {resultadoTest}</Text>
+      <View style={styles.contenedorDescripcion}>
+        {descripcionPersonalidad ? (
+          <>
+            <Text style={styles.descripcionResultado}>{descripcionPersonalidad.descripción}</Text>
+            {Object.entries(descripcionPersonalidad.características).map(([key, value]) => (
+              <Text key={key} style={styles.caracteristicasResultado}>
+                {key}: {value}
+              </Text>
+            ))}
+          </>
+        ) : (
+          <Text style={styles.errorText}>No se encontró una descripción para el resultado obtenido.</Text>
+        )}
+      </View>
     </ View>  
   )
 }
@@ -32,22 +34,28 @@ export default Resultado
 
 const styles = StyleSheet.create({
     containerResultado: {
-        padding: 'auto',
-        gap: 15,
+        gap: 20,
         height: '100%',
         backgroundColor: colores.amarillito,
+        justifyContent: 'center'
       },
       tituloResultado: {
-        margin: 'auto',
+        width: 'auto',
+        marginTop: 40,
+        marginLeft: 20,
+        marginRight: 20,
         padding: 10,
-        fontSize: 30,
+        fontSize: 24,
         fontWeight: 'bold',
         textAlign: 'center',
         fontFamily: 'OpenSans-Regular',
         color: colores.gris,
         backgroundColor: '#ffffff',
         borderRadius: 25,
-        marginTop: 90,
+      },
+      contenedorDescripcion:{
+        gap: 15,
+        padding: 15
       },
       descripcionResultado:{
         backgroundColor: '#ffffff',
@@ -55,11 +63,14 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         padding: 10,
         margin: 10,
-        fontSize: 14
+        fontSize: 18,
+        textAlign: 'center'
       },
       caracteristicasResultado:{
         color: colores.gris,
-        padding: 10,
-        margin: 10
+        marginLeft: 20,
+        marginRight:20,
+        fontSize: 16,
+        textAlign: 'center'
       }
 })

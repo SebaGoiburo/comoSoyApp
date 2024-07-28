@@ -4,14 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { colores } from '../global/colors';
 import { AntDesign } from '@expo/vector-icons';
 import Pregunta from '../components/Pregunta';
-import { anteriorIdPregunta, siguienteIdPregunta } from '../features/TestSlice';
-import { usePostTestMutation } from '../services/testServices';
+import { anteriorIdPregunta } from '../features/TestSlice';
 
 
 const { height: windowHeight } = Dimensions.get('window');
 
 
-const Test = ({navigation, route}) => {
+const Test = () => {
 
   const dispatch = useDispatch();
 

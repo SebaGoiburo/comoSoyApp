@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Dimensions } from 'react-native'
+import { StyleSheet, View, Image, Dimensions } from 'react-native'
 import React from 'react'
 import { colores } from '../global/colors';
 

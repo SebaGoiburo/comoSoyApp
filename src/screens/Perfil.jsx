@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Dimensions, Pressable, Platform } from 'react-native'
+import { StyleSheet, Text, View, Image, Platform } from 'react-native'
 import React from 'react'
 import { colores } from '../global/colors'
 import { useSelector } from 'react-redux';
@@ -8,7 +8,6 @@ import { clearUser } from '../features/UserSlice';
 import { truncateSessionTable } from '../persistence';
 import { useDispatch } from 'react-redux';
 
-const { height: windowHeight } = Dimensions.get('window');
 
 const Perfil = ({navigation}) => {
 
@@ -25,7 +24,7 @@ const Perfil = ({navigation}) => {
 
   const signOut =  async () => {
     try {         
-      if (Platform.OS !== "web") await truncateSessionTable(); // borro la session
+      if (Platform.OS !== "web") await truncateSessionTable();
       dispatch(clearUser());
     } catch (error) {
       console.log({ errorSignOutDB: error });
@@ -83,10 +82,10 @@ const styles = StyleSheet.create({
     marginTop: 90,
   },
   fotoPerfil: {
-    height: 150,
-    width: 150,
+    height: 180,
+    width: 180,
     resizeMode: 'contain',
-    borderRadius: 75,
+    borderRadius: 90,
     borderColor: colores.salmon,
     borderWidth: 2,
     alignSelf: 'center'

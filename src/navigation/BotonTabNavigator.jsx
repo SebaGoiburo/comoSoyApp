@@ -1,12 +1,10 @@
-import { StyleSheet, Text, View, Dimensions } from 'react-native'
+import { StyleSheet, View, Dimensions } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { colores } from '../global/colors';
 import { FontAwesome } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-
-import Perfil from '../screens/Perfil';
 import HomeStackNavigator from './HomeStackNavigator';
 import Compatibilidad from '../screens/Compatibilidad';
 import Header from '../components/Header'
@@ -27,7 +25,7 @@ const BotonTabNavigator = () => {
         tabBarStyle: styles.tabBar,
       })}>
         <Tab.Screen
-            name="Home" 
+            name="HomeTab" 
             component={HomeStackNavigator}
             options={{
                     tabBarIcon: ({focused}) =>{

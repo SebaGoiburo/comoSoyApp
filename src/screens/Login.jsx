@@ -4,10 +4,8 @@ import { colores } from '../global/colors';
 import { useSignInMutation } from '../services/authServices';
 import { useDispatch } from "react-redux";
 import { setUser } from "../features/UserSlice";
-import { setResultadoTest } from "../features/TestSlice";
 import InputForm from '../components/InputForm';
 import { insertSession } from '../persistence';
-import { useGetPersonalityTestQuery } from '../services/testServices';
 
 const { height: windowHeight } = Dimensions.get('window');
 
@@ -45,25 +43,6 @@ const Login = ({ navigation }) => {
             })();
         }
     }, [result, dispatch]);
-
-    useEffect(() => {
-        if (localId) {
-            const fetchPersonalityTest = async () => {
-                try {
-                    const response = await useGetPersonalityTestQuery(localId).unwrap();
-                    if (response) {
-                        const testResults = Object.values(response);
-                        if (testResults.length > 0) {
-                            dispatch(setResultadoTest(testResults[0].resultado));
-                        }
-                    }
-                } catch (error) {
-                    console.error('Error recuperando el test de personalidad', error);
-                }
-            };
-            fetchPersonalityTest();
-        }
-    }, [localId, dispatch]);
 
     const onSubmit = () => {
         triggerSignIn({ email, password, returnSecureToken: true });

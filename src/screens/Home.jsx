@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Dimensions, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 import React from 'react';
 import { colores } from '../global/colors';
 
-const { height: windowHeight } = Dimensions.get('window');
+
 
 const Home = ({navigation, route}) => {
   return (

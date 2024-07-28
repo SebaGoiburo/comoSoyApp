@@ -5,19 +5,39 @@ import { colores } from '../global/colors';
 import Home from '../screens/Home'
 import Test from '../screens/Test';
 import Resultado from '../screens/Resultado';
-import { useSelector } from 'react-redux';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { useGetPersonalityTestQuery } from '../services/testServices';
+import { useState, useEffect } from 'react';
+import { setResultadoTest } from '../features/TestSlice';
 
 const Stack = createNativeStackNavigator();
 
 
 const HomeStackNavigator = () => {
 
-  const hayResultado = useSelector((state)=> state.test.value.resultadoTest);
+  const { localId } = useSelector((state) => state.auth.value);
+  const { data: resultado, isLoading } = useGetPersonalityTestQuery(localId);
+  const [initialRoute, setInitialRoute] = useState(null);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!isLoading && resultado) {
+      dispatch(setResultadoTest(resultado.resultado));
+      setInitialRoute("Resultado");
+    } else if (!isLoading) {
+      setInitialRoute("Home");
+    }
+  }, [isLoading, resultado, dispatch]);
+
+  if (initialRoute === null) {
+    return null;
+  }
+
+
 
   return (
         <Stack.Navigator 
-        initialRouteName={hayResultado ? "Resultado" : "Home"}
+        initialRouteName={initialRoute}
         screenOptions={{
           headerShown: false,
           headerStyle: {

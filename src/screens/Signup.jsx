@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Dimensions, SafeAreaView, TextInput, Pressable, Image } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, SafeAreaView, Pressable, Image } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { colores } from '../global/colors'
 import { useSignUpMutation } from '../services/authServices';
@@ -35,9 +35,8 @@ const Signup = ({navigation}) => {
     }, [result])
 
     const onSubmit = async () => {
-        console.log("onSubmit called");
         try {
-            // Validar los campos antes de enviar
+            
             await signupSchema.validate({ email, password, confirmPassword }, { abortEarly: false });
 
             if (password !== confirmPassword) {
@@ -45,15 +44,13 @@ const Signup = ({navigation}) => {
                 return;
             }
 
-            // Limpiar mensajes de error
             setErrorMail("");
             setErrorPassword("");
             setErrorConfirmPassword("");
 
-            console.log("Triggering signup mutation with:", { email, password });
             triggerSignUp({ email, password, returnSecureToken: true });
         } catch (err) {
-            // Manejo de errores de validación
+            
             err.inner.forEach((error) => {
                 if (error.path === "email") setErrorMail(error.message);
                 if (error.path === "password") setErrorPassword(error.message);

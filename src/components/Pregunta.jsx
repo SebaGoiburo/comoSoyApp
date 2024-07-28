@@ -49,10 +49,9 @@ const Pregunta = () => {
         localId,
         resultado
       }).unwrap();
-      console.log('Test successfully posted:', response);
       navigation.navigate('Resultado', { resultado });
     } catch (error) {
-      console.error("Error in handleCalcularResultado:", error);
+      console.error("Error en handleCalcularResultado:", error);
     }
   }
 

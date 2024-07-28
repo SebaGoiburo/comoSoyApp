@@ -19,11 +19,9 @@ const Navigator = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await getSession(); // obtengo la session
-        //console.log(response)
+        const response = await getSession();
         if (response.rows.length > 0) {
           const user = response.rows._array[0];
-          //console.log(user);
           dispatch(
             setUser({
               email: user.email,
