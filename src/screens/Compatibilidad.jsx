@@ -4,8 +4,10 @@ import { colores } from '../global/colors';
 import { useSelector } from 'react-redux';
 import compatibilidadData from '../data/compatibilidad.json';
 
+
 const Compatibilidad = () => {
   const resultadoTest = useSelector((state) => state.test.value.resultadoTest);
+  
   const [compatibilidades, setCompatibilidades] = useState([]);
 
   useEffect(() => {

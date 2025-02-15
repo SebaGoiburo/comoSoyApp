@@ -1,6 +1,7 @@
 [
     {
         "resultado": "ISTJ",
+        "nombrePersonalidad": "Inspector",
         "descripción": "Los ISTJ son meticulosos y metódicos. Valoran la tradición y la lealtad, y son conocidos por su confiabilidad y compromiso. Prefieren trabajar en entornos estructurados y seguir procedimientos establecidos.",
         "características": {
             "Introversión (I)": "Prefieren trabajar solos o en pequeños grupos y necesitan tiempo a solas para recargar energías.",
@@ -11,6 +12,7 @@
     },
     {
         "resultado": "ISFJ",
+        "nombrePersonalidad": "Defensor",
         "descripción": "Los ISFJ son protectores y atentos a las necesidades de los demás. Se destacan por su naturaleza servicial y su disposición a apoyar a quienes los rodean. Son leales y dedicados.",
         "características": {
             "Introversión (I)": "Prefieren la introspección y necesitan tiempo a solas.",
@@ -21,6 +23,7 @@
     },
     {
         "resultado": "INFJ",
+        "nombrePersonalidad": "Consejero",
         "descripción": "Los INFJ son visionarios y tienen un fuerte sentido de intuición. Son idealistas y están motivados por un profundo deseo de ayudar a los demás. Suelen ser muy empáticos y comprensivos.",
         "características": {
             "Introversión (I)": "Necesitan tiempo a solas para recargar energías.",
@@ -31,6 +34,7 @@
     },
     {
         "resultado": "INTJ",
+        "nombrePersonalidad": "Arquitecto",
         "descripción": "Los INTJ son estratégicos y analíticos. Valoran la eficiencia y son buenos planificadores a largo plazo. Tienen una gran capacidad para ver el panorama general y desarrollar soluciones innovadoras.",
         "características": {
             "Introversión (I)": "Prefieren trabajar solos y necesitan tiempo a solas.",
@@ -41,6 +45,7 @@
     },
     {
         "resultado": "ISTP",
+        "nombrePersonalidad": "Artesano",
         "descripción": "Los ISTP son prácticos y orientados a la acción. Disfrutan resolviendo problemas y trabajando con sus manos. Son independientes y valoran la libertad personal.",
         "características": {
             "Introversión (I)": "Prefieren trabajar solos y necesitan tiempo a solas.",
@@ -51,6 +56,7 @@
     },
     {
         "resultado": "ISFP",
+        "nombrePersonalidad": "Artista",
         "descripción": "Los ISFP son artistas y tienen un fuerte sentido de estética. Son sensibles y empáticos, disfrutando del momento presente y de las experiencias sensoriales.",
         "características": {
             "Introversión (I)": "Prefieren la introspección y tiempo a solas.",
@@ -61,6 +67,7 @@
     },
     {
         "resultado": "INFP",
+        "nombrePersonalidad": "Mediador",
         "descripción": "Los INFP son idealistas y buscan significado y propósito en la vida. Son creativos y valoran la autenticidad y la integridad personal. Están motivados por sus principios y valores personales.",
         "características": {
             "Introversión (I)": "Necesitan tiempo a solas para recargar energías.",
@@ -71,6 +78,7 @@
     },
     {
         "resultado": "INTP",
+        "nombrePersonalidad": "Lógico",
         "descripción": "Los INTP son pensadores analíticos y lógicos. Disfrutan resolviendo problemas complejos y explorando teorías abstractas. Son curiosos y valoran la independencia intelectual.",
         "características": {
             "Introversión (I)": "Prefieren trabajar solos y necesitan tiempo a solas.",
@@ -81,6 +89,7 @@
     },
     {
         "resultado": "ESTP",
+        "nombrePersonalidad": "Aventurero",
         "descripción": "Los ESTP son enérgicos y orientados a la acción. Disfrutan de la aventura y son buenos en la resolución de problemas prácticos. Son espontáneos y disfrutan del momento presente.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -91,6 +100,7 @@
     },
     {
         "resultado": "ESFP",
+        "nombrePersonalidad": "Animador",
         "descripción": "Los ESFP son sociables y disfrutan interactuando con los demás. Son espontáneos y disfrutan del momento presente. Tienen un fuerte sentido estético y disfrutan de las experiencias sensoriales.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -101,6 +111,7 @@
     },
     {
         "resultado": "ENFP",
+        "nombrePersonalidad": "Campeón",
         "descripción": "Los ENFP son entusiastas y creativos. Disfrutan explorando nuevas ideas y posibilidades. Son empáticos y valoran la autenticidad y la conexión emocional con los demás.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -111,6 +122,7 @@
     },
     {
         "resultado": "ENTP",
+        "nombrePersonalidad": "Innovador",
         "descripción": "Los ENTP son ingeniosos y tienen una mente rápida. Disfrutan debatiendo ideas y resolviendo problemas complejos. Son innovadores y disfrutan explorando nuevas posibilidades.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -121,6 +133,7 @@
     },
     {
         "resultado": "ESTJ",
+        "nombrePersonalidad": "Empresario",
         "descripción": "Los ESTJ son organizados y responsables. Valoran la tradición y el orden, y son buenos en la implementación de planes y procedimientos. Son líderes naturales y se destacan en la gestión de personas y recursos.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -131,6 +144,7 @@
     },
     {
         "resultado": "ESFJ",
+        "nombrePersonalidad": "Proveedor",
         "descripción": "Los ESFJ son cálidos y serviciales. Disfrutan interactuando con los demás y se preocupan por su bienestar. Valoran la armonía y son buenos en la organización de eventos y actividades sociales.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -141,6 +155,7 @@
     },
     {
         "resultado": "ENFJ",
+        "nombrePersonalidad": "Maestro",
         "descripción": "Los ENFJ son carismáticos y empáticos. Son líderes naturales que inspiran y motivan a los demás. Tienen un fuerte sentido de responsabilidad social y disfrutan ayudar y guiar a los demás hacia su desarrollo personal y profesional.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",
@@ -151,6 +166,7 @@
     },
     {
         "resultado": "ENTJ",
+        "nombrePersonalidad": "Comandante",
         "descripción": "Los ENTJ son estratégicos y orientados a resultados. Son líderes naturales que disfrutan planificando y ejecutando estrategias para alcanzar sus objetivos. Son eficientes y valoran la competencia.",
         "características": {
             "Extraversion (E)": "Energizados por la interacción social y las experiencias externas.",

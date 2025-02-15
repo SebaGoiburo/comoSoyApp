@@ -1,6 +1,6 @@
-# ComoSoy
+# Affinity
 
-ComoSoy es una aplicación móvil desarrollada con React Native y Expo. Esta app se encuentra en fase de desarrollo y es un trabajo para aprobar el curso de Desarrollador de Aplicaciones de la academia CoderHouse.
+Affinity es una aplicación móvil desarrollada con React Native y Expo. Esta app se encuentra en fase de desarrollo y es un trabajo para aprobar el curso de Desarrollador de Aplicaciones de la academia CoderHouse.
 
 ## Descripción
 
